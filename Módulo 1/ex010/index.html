@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+        <p>Tente abrir este site em plataformas diferentes para que a imagem se adapte</p>
+        <picture>
+            <source media="(max-width:730px )" srcset="Imagens/P.png" type="image/PNG"> <!--Minimo até 730px width-->
+            <source media="(max-width:1025px )" srcset="Imagens/M.png" type="image/PNG"><!--730 até 1025px width-->
+            <img src="Imagens/G.png" alt="Imagem flexivel"> <!--A cima de 1025px width-->
+        </picture>
+        <!--Atenção para trocar "min" por "max" e acrescentar "px" ao valor desejado-->
+
+    <h1>Reproduzindo Audios</h1>
+        <!--Esta é a forma mais simples de se adcionar um audio-->
+        <audio src="Wooden Train Whistle.mp3" controls autoplay></audio>
+
+        <h2>Teste alternativo</h2>
+        <!--SEGUNDA ALTERNATIVA DE COLOCAR O AUDIO-->
+        <audio preload="metadata" controls>  <!--preload existem 3 formas para carregar o audio, metadata carrega partes-->
+            <source src="Wooden Train Whistle.mp3" type="audio/mpeg">
+            <source src="Wooden Train Whistle.mp3" type="audio/ogg">
+            <source src="Wooden Train Whistle.mp3" type="audio/wav">
+           
+            <p>Infelizmente o seu navegado não é compativel com os arquivos de audios, <a href="Wooden Train Whistle.mp3"> clique aqui para baixar
+                    o arquivo de audio </a>
+            </p>
+        </audio>
+        
+    
+</body>
+</html>

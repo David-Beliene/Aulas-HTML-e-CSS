@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo Videos hospedados localmente</h1>
+        <p>este video está hospedado no meu proprio servidor</p>
+        <video src="Pexels-Ana-Benet-8242999.m4v" controls width="300"></video>
+    <!--Na forma de múltiplos formatos-->
+    <h1>Inserindo com múltiplos formatos</h1>
+        <video controls loop poster="download.jpg" width="500">
+            <source src="a039ac08-b3e4e923.mp4" type="video/mp4">
+            <source src="Pexels-Ana-Benet-8242999.webm" type="video/webm">
+            <source src="Pexels-Ana-Benet-8242999.m4v" type="video/mp4">
+            <p>Seu navegador não tem compatibilidade</p>
+        </video>
+
+    <h1>Inserindo Videos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gFuau8PBpB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo Videos do Vimeo</h1>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/49240705?h=0499109045&color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <p><a href="https://vimeo.com/49240705">Paypal</a> from <a href="https://vimeo.com/oddfellows">oddfellows</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+</body>
+</html>

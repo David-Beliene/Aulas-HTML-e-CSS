@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Links Externos</h1>
+        <p>Aqui você consegue acessar o <a href="https://www.youtube.com/" target="_blank" rel="external"> YouTube</a></p> <!--Importante utilizar o target e rel, para que o link abra uma nova aba e não sobrescreva a sua!!-->
+        <!--Target é o alvo, que seria algo em branco-->
+        <p>O <a href="https://lp.canadaimmigrationexpress.com/lp/cie/canadaranks/?utm_lang=en&af=cie_2786_en&Campaign_device=c&device_m=&Physical=1032068&Campaign_ID=9900720896&AdGroup_ID=95680435810&Match_Type=b&KW=canada%20immigration&Ad_ID=444045320068&utm_subid2=_g&utm_subid2=&utm_medium=b_canada%20immigration&gclid=CjwKCAiA1JGRBhBSEiwAxXblwajc1EN-7toOyFwCrrPO806GDcrnWXGyIxidW6BqObiSnA_de0BYiBoCuaIQAvD_BwE#form">jeito errado</a> de fazer seria sem os parâmetros <strong>target</strong> e <strong>rel</strong></p>
+
+    <h1>Links Internos</h1>
+        <p>Aqui você pode acessar a <a href="pag02.html" rel="next">segunda</a> página</p>
+        <!--Aqui fiz o uso de rel como "Next" próxima página-->
+        <p>Aqui voce acessa a <a href="Terceira pag/pag03.html" target="_self">terceira página</a></p> <!--Aqui  o Target _SELF é opcional-->
+
+    <h1>Links para Download</h1>
+        <ul>
+            <li><a href="C:\Users\david\OneDrive\Documentos\Children Learning English.pdf" download="Children Learning English.pdf" type="application/pdf">Livro Descompactado</a></li> <!--Atenção aos Novos parâmetros utilizados para Download-->
+            <li><a href="C:\Users\david\OneDrive\Documentos\Children Learning English.zip" download="Children Learning English.zip" type="application/zip">Livro Compactado</a></li>
+        </ul>
+        <h2>Listas de Media Types</h2>
+            <p>Para saber oque colocar dentro do atributo TYPE basta consulta a lista oficial do <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">IANA</a></p>
+
+    
+
+
+    
+</body>
+</html>
