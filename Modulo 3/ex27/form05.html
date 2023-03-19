@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--CHECKBOX - Quadrados para marcação
+        RADIO - Circulos com marcação única, para poder trocar o item marcado deve-se utilizar o mesmo "name" nos itens. 
+        Podemos tambem já deixar uma opção marcada com o CHECKED
+        Por padrão o radio envia o formulário com valor "on", para resolver deve-se especificar o atributo VALUE no input desejado-->
+
+
+    <h1>Checkbox e Radio button</h1>
+    <form action="cadastro.php" method="get"  autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc" checked value="M">
+            <label for="imasc">Masculino</label> <br>
+            <input type="radio" name="sexo" id="ifem" value="F">
+            <label for="ifem">Feminino</label> <br>
+            <input type="radio" name="sexo" id="ibin" value="NB">
+            <label for="ibin">Não Binário</label><br>
+            <input type="radio" name="sexo" id="idung">
+            <label for="idung">Dunguinha</label>
+
+        </fieldset>
+        <FIELDSET>
+            <legend>Esportes Favoritos</legend>
+            <p>
+                <input type="checkbox" name="Futebol" id="ifutebol">
+                <label for="ifutebol">Futebol</label> <br>
+                <input type="checkbox" name="basquete" id="ibasquete">
+                <label for="ibasquete">Basquete</label> <br>
+                <input type="checkbox" name="Natação" id="inataçao">
+                <label for="inataçao">Natação</label> <br>
+                <input type="checkbox" name="tenis" id="itenis">
+                <label for="itenis">Tênis</label>
+            </p>
+        </FIELDSET>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>

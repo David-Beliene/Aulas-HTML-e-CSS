@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--INPUT TEL E EMAIL
+        FIELDSET - Tag utilizada para agrupar
+        LEGEND - Funcionalidades desconhecida, mas a principio posso por titulo nos fieldset
+        Estudar mais sobre RegEx
+        PATTERN - expressoes regulares para criar regras (não tão eficiente quanto a linguagem de programação)-->
+    <h1>Formulário com telefone e e-mail</h1>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+    
+</body>
+</html>
