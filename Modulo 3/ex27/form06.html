@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--INPUT RANGE - Permite o usuário enviar um valor em forma de barra, como nivel de satisfação.
+        Podemos utilizar "MAX" e "MIN" para desterminar quantos valores entrarão na barra.
+        Aqui o "VALUE" pode ser utilizado para determinar o valor em que se iniciara a barra
+
+        INPUT COLOR - Disponibiliza uma ferramenta com diversas cores
+    
+        INPUT FILE - Permite o envio de arquivos pelo usuário e deve ser utilizado o metodo POST-->
+    <h1>Elementos color, range e file</h1>
+
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor">
+        </p>
+        <p>
+            <label for="inivel">Nivel de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="5">
+        </p>
+
+        <p>
+            <label for="ifoto">Foto de perfil:</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
