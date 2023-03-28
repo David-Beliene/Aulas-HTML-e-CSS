@@ -1,0 +1,28 @@
+@charset "UTF-8";
+                  /* ESTILOS PARA IMPRESSORA */
+
+/* OCULTAÇÃO DE ITENS - Baste utilizar "display: none" assim como utilizado no MENU*/
+
+
+*{
+    margin: 5px;
+    padding: 5px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1em;
+    
+}
+
+
+menu{
+    display: none;
+}
+article{
+    width: 100%;
+}
+article::after{
+    content: "Este artigo foi impresso pelo site criados com a finalidade de exercícios por David Henrique Beliene Alves";
+}
